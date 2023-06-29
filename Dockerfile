@@ -21,4 +21,4 @@ COPY --from=build-env /app/out .
 
 # Run the application
 #ENTRYPOINT ["dotnet", "dotnetwebapp.dll"]
-ENTRYPOINT ["dotnet", "dotnetwebapp.dll", "--urls", "http://*:5000"]
+ENTRYPOINT ["dotnet", "Hospital_Appointment_Booking_system.dll", "--urls", "http://*:5000"]
