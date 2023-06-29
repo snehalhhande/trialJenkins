@@ -28,7 +28,7 @@ pipeline {
             steps {
 				echo "Building our image"
 				script {
-					sh "docker build -t -f /Hospital_Appointment_System/Hospital_Appointment_Booking_System/Dockerfile ${img} ."
+					sh "docker build -f /Hospital_Appointment_System/Hospital_Appointment_Booking_System/Dockerfile -t ${img} ."
                 }
             }
         }
